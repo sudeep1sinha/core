@@ -1,0 +1,50 @@
+# .gitignore for Django Projects
+
+# Python-related files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+.env
+
+# Django-specific files
+*.sqlite3
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.log
+media/
+
+# Static files
+staticfiles/
+
+# Secret key
+secret_key.txt
+
+# IDE-specific files (e.g., PyCharm, VSCode, etc.)
+.vscode/
+.idea/
+*.code-workspace
+
+# Development and deployment configurations
+*.env
+
+# Ignore local settings (typically in settings/local.py)
+/local_settings.py
+
+# Ignore pipenv or poetry lock files
+Pipfile.lock
+poetry.lock
+
+# Ignore Docker-related files
+Dockerfile
+docker-compose.yml
+
+# Ignore database backup files
+*.bak
+*.dump
