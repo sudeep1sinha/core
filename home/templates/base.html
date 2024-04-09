@@ -10,6 +10,18 @@
       }</style>
 </head>
 <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">Navbar</a>
+          <form class="d-flex" role="search">
+           {% if request.user.is_authenticated %}
+            <a href="/logout/" class="btn btn-outline-danger" type="submit">Logout</a>
+          {% else %}
+          <a href="/login/" class="btn btn-outline-danger" type="submit">Login</a>
+           {% endif %}
+        </form>
+        </div>
+      </nav>
 
     {% block start %}
 

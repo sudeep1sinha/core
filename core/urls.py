@@ -27,9 +27,12 @@ urlpatterns = [
     path('',home , name='home'),
     path('contact/',contact_page, name='contact'),
     path('success_page/',success_page, name='success_page'),
-    path('about/',about_page, name='about'),
-    path('receipes/',receipes, name='receipes'),
-    path('delete-receipe/<id>/' , delete_receipe , name="delete_receipe"),
+    path('login/',login_page, name='login_page'),
+    path('register/',register_page,name='register_page'),
+    path('recipes/',recipes, name='recipes'),
+    path('delete-recipe/<id>/' , delete_recipe , name="delete_recipe"),
+    path('update-recipe/<id>/' , update_recipe , name="update_recipe"),
+    path('logout/',logout_page, name='logout_page'),
 ]
 
 
